@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MultiCalculator.MainPage">
+
+    <ScrollView BackgroundColor="#37323E">
+        <VerticalStackLayout
+            Spacing="25"
+            Padding="30,0"
+            VerticalOptions="Start">
+
+            <Entry x:Name="textEntry" Keyboard="Numeric" BackgroundColor="AntiqueWhite" 
+                   ClearButtonVisibility="WhileEditing" FontAutoScalingEnabled="True"/>
+            <HorizontalStackLayout
+                Spacing="20"
+                HorizontalOptions="Start">
+                <Button x:Name="deleteBtn" Text="C" WidthRequest="70" HeightRequest="70" 
+                        TextColor="#2D936C" />
+                <Button x:Name="backSpaceBtn" WidthRequest="70" HeightRequest="70" ImageSource="icons_backspace.png"/>
+                <Button x:Name="divModBtn" WidthRequest="70" HeightRequest="70"/>
+                <Button x:Name="divBtn" WidthRequest="70" HeightRequest="70"/>
+            </HorizontalStackLayout>
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
